@@ -4,6 +4,7 @@
   "description": "NYT search and save app",
   "main": "server.js",
   "scripts": {
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "server": "node server.js",
     "client": "node scripts/start-client.js",
     "start": "nodemon server.js | npm run client",
